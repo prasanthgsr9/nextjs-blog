@@ -1,6 +1,10 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    // Example content paths...
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -10,3 +14,4 @@ module.exports = {
   },
   plugins: [],
 }
+
