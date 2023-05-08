@@ -34,14 +34,14 @@ jobs:
         run: |
           export DISPLAY=:1
           npm run start 2>&1 > app.log &
-          npx wait-on --timeout 30000 http://localhost:3000 || (cat app.log && exit 1)
+          npx wait-on --timeout 30000 https://prasanthgsr9.github.io/nextjs-blog/ || (cat app.log && exit 1)
 
       - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
 
       - name: Generate Lighthouse Report
         run: |
-          lighthouse http://localhost:3000 --output html --output-path ./reports/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
+          lighthouse https://prasanthgsr9.github.io/nextjs-blog/ --output html --output-path ./reports/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
 
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3

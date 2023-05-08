@@ -1,8 +1,8 @@
 {
     "pages": [
       {
-        "path": "/",
-        "title": "MyWebClass.org"
+        "path": "/nextjs-blog/",
+        "title": "ai powered education"
       }
     ]
 }
