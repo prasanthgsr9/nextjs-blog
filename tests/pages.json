@@ -1,7 +1,7 @@
 {
     "pages": [
       {
-        "path": "/",
+        "path": "/nextjs-blog/",
         "title": "ai powered education"
       }
     ]
