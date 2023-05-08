@@ -1,9 +1,9 @@
 {
-  "private": true,
+    "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node validator.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node validator.js",
     "test": "npx playwright test",
     "build:css": "tailwindcss build styles/styles.css -o styles/output.css"
   },
@@ -19,6 +19,7 @@
     "fs": "0.0.1-security",
     "glob": "^9.3.2",
     "gray-matter": "^4.0.3",
+    "html-validator": "^6.0.1",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
