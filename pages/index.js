@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Layout from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import Head from 'next/head'
+import Script from "next/script";
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,14 +13,18 @@ export default function Home({ allPostsData }) {
     <div className='mx-auto md:max-w3xl md:px-4 min-h-screen'>
       <Head>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GD0RYEYMM3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+<Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-GD0RYEYMM3`} />
 
-  gtag('config', 'G-GD0RYEYMM3');
-</script>
+            <Script strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-GD0RYEYMM3', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
         <title>ai powered education</title>
         <link rel='icon' href='public/favicon.ico'></link>
       </Head>
