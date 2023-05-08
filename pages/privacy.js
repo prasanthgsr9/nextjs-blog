@@ -18,7 +18,7 @@ const PrivacyPage = () => {
 
   const handleDisagree = () => {
     localStorage.setItem('privacyPolicyAccepted', 'false');
-    router.push('/nextjs-blog/disagree');
+    router.push('/disagree');
   };
 
   return (
