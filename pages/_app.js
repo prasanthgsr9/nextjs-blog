@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.pathname !== '/nextjs-blog/disagree' && router.pathname !== '/privacy' && !localStorage.getItem('privacyPolicyAccepted')) {
+    if (router.pathname !== '/disagree' && router.pathname !== '/privacy' && !localStorage.getItem('privacyPolicyAccepted')) {
       router.push('/privacy');
     }
   }, [router.pathname]);

@@ -8,7 +8,7 @@ const DisagreePage = () => {
     <div className={styles.container}>
       <h1>We're sorry to see you go...</h1>
       <p>Unfortunately, to use our website, you must agree to our privacy policy.</p>
-      <p>If you change your mind, you can <Link href="/nextjs-blog/privacy"><div className={styles.a}> <a>return to the privacy policy page</a></div></Link> and accept our privacy policy.</p>
+      <p>If you change your mind, you can <Link href="/privacy"><div className={styles.a}> <a>return to the privacy policy page</a></div></Link> and accept our privacy policy.</p>
     </div>
   );
 };
