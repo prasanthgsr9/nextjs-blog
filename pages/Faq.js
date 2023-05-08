@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
     <>
       <Layout home>
         <Head>
-          <title>{siteTitle}</title>
+          <title>FAQ</title>
         </Head>
         <section class="bg-white">
           <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
