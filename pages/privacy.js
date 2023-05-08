@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/privacy.module.css';
 import Cookies from 'js-cookie';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const PrivacyPage = () => {
   const router = useRouter();
@@ -24,6 +26,9 @@ const PrivacyPage = () => {
 
   return (
     <div className={styles.container}>
+      {hasAgreed && (
+        <Navbar/>
+      )}
       <h2>Privacy Policy</h2>
       {/* Your privacy policy content here */}
       <p>...</p>
@@ -36,6 +41,9 @@ const PrivacyPage = () => {
             <button onClick={handleDisagree}>Disagree</button>
           </div>
         </div>
+      )}
+      {hasAgreed && (
+        <Footer/>
       )}
     </div>
   );
