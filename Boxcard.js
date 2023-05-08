@@ -33,7 +33,7 @@ const Boxcard = () => {
 
 <Link href="/resource">
     <button class="flex-shrink-0 bg-white hover:bg-white border-white hover:border-white text-sm border-4 text-blue-400 hover:text-blue-300 py-1 px-2 rounded" type="button">
-      ExploreMore
+      Explore More
     </button>
 </Link>
 
