@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD0RYEYMM3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
     <Layout />
     <div className='mx-auto md:max-w3xl md:px-4 min-h-screen'>
       <Head>
-        <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD0RYEYMM3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
