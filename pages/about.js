@@ -6,20 +6,25 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Footer from '../components/Footer'
 import Blog from '../components/Blog'
+import Script from 'next/script'
 
 export default function Home({ allPostsData }) {
   return (
     <><Layout home>
       <Head>
+       <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-GD0RYEYMM3`} />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GD0RYEYMM3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+            <Script strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-GD0RYEYMM3', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
 
-  gtag('config', 'G-GD0RYEYMM3');
-</script>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
