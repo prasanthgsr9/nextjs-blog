@@ -26,6 +26,9 @@ export default function Home({ allPostsData }) {
                 `}
             </Script>
         <title>{siteTitle}</title>
+          <meta name="description" content="Share content that helps school leaders compare and evaluate the impact of different AI-driven Agile and Lean education solutions on their schools. Present case studies, research findings, and success stories to demonstrate the positive effects and ROI of these methodologies on school performance and student outcomes." />
+        <meta name="keywords" content="School principals, administrators, AI-driven education, Agile and Lean methodologies, evaluation, ROI" />
+
       </Head>
       <section className={utilStyles.headingMd}>
         <Services />

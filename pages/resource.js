@@ -26,6 +26,9 @@ export default function Home({ allPostsData }) {
                 `}
             </Script>
         <title>{siteTitle}</title>
+          <meta name="description" content="Develop informative content that highlights the benefits of incorporating AI-driven Agile and Lean methodologies into school operations and learning environments. Address the concerns and questions school leaders may have and provide practical guidance and resources to help them navigate the challenges of implementing these approaches." />
+        <meta name="keywords" content="School principals, administrators, AI-driven education, Agile and Lean methodologies, student success" />
+
       </Head>
       <section className={utilStyles.headingMd}>
       <Video />

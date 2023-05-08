@@ -27,6 +27,8 @@ export default function Home({ allPostsData }) {
             </Script>
         <title>ai powered education</title>
         <link rel='icon' href='public/favicon.ico'></link>
+          <meta name="description" content="Create content that raises awareness among school principals and administrators about the potential of AI-driven Agile and Lean methodologies in improving educational outcomes. Discuss their crucial role in driving the adoption of these approaches and emphasize the impact they can have on school performance and student success." />
+        <meta name="keywords" content="School principals, administrators, AI-driven education, Agile and Lean methodologies, future of education" />
       </Head>
       <div class="w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
        <div className="text-center pb-12 md:pb-16">

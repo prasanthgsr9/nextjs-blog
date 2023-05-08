@@ -25,7 +25,11 @@ export default function Home({ allPostsData }) {
                     });
                 `}
             </Script>
+
         <title>{siteTitle}</title>
+          <meta name="description" content="Offer actionable resources and support to school principals and administrators who are ready to adopt AI-driven Agile and Lean methodologies at their schools. Provide training, guidance, and ongoing assistance to ensure successful implementation and positive outcomes. Encourage them to join a network of like-minded professionals to share experiences and best practices." />
+        <meta name="keywords" content="School principals, administrators, AI-driven education, Agile and Lean methodologies, implementation guide, training and support" />
+
       </Head>
       <section className={utilStyles.headingMd}>
         <Testimonials />
