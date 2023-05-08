@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-import { Testimonials } from '../components/testimonials'
+import { Testimonials } from '../components/Testimonials.tsx'
 import Footer from '../components/Footer'
 
 export default function Home({ allPostsData }) {
