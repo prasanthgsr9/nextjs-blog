@@ -1,38 +1,40 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Boxcard from '../components/Boxcard'
+import Content from '../components/Content'
+import Footer from '../components/Footer'
+import Layout from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Head from 'next/head'
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <>
+    <Layout />
+    <div className='mx-auto md:max-w3xl md:px-4 min-h-screen'>
       <Head>
-        <title>{siteTitle}</title>
+        <title>ai powered education</title>
+        <link rel='icon' href='public/favicon.ico'></link>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+      <div class="w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+       <div className="text-center pb-12 md:pb-16">
+      <h1 className="text-4xl md:text-6xl font-bold font-serif-garamond text-blue-600 leading-tighter tracking-tighter mb-4" >
+        The Future of Education: AI-Driven Agile and Lean Methodologies for School Leaders</h1>
+        <p className="text-3xl font-serif font-medium text-lime-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
+        Transform your school and empower educators with cutting-edge technologies and innovative approaches</p>
+        <br></br>
+       </div>
+
+      <main className='bg-blue-400 rounded-xl p-4'>
+        <Boxcard />
+      </main>
+      <Content />
+      <div>
+</div>
+    </div>
+      </div>
+      <Footer />
+    </>
+
+
   )
 }
 
