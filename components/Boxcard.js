@@ -12,7 +12,7 @@ const Boxcard = () => {
         <img
          className="mx-auto"
          alt="profile image"
-         src="/images/Test.jpg" // Update the path here
+         src="/nextjs-blog/images/Test.jpg" // Update the path here
           />
       </div>
       <div className="px-4 py-8 md:px-8 self-center md:w-2/3 md:relative left-9">
